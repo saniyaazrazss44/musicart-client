@@ -5,13 +5,14 @@ import MobileInvoiceIcon from '../../assets/icons/mobile_invoice.png'
 import MobileLoginIcon from '../../assets/icons/mobile_login.png'
 import MobileLogoutIcon from '../../assets/icons/mobile_logout.png'
 import './Mobile_Footer.css'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { viewCartCount } from '../../apis/cartApis'
 
 const Mobile_Footer = () => {
 
     const user_Id = localStorage.getItem('userId')
     const [cartItemCount, setCartItemCount] = useState(0)
+    const location = useLocation();
 
     useEffect(() => {
 
@@ -44,14 +45,14 @@ const Mobile_Footer = () => {
     return (
         <div className='mobile-container'>
             <div className='mobile-div'>
-                <Link to='/' style={{ textDecoration: 'none' }}>
+                <Link to='/' className={location.pathname === '/' ? 'mobile-footer-div active' : 'mobile-footer-div'} style={{ textDecoration: 'none' }}>
                     <div className='mobile-footer-div'>
                         <img src={MobileHomeIcon} alt="home" />
                         <span>Home</span>
                     </div>
                 </Link>
 
-                <Link to='/view-cart' style={{ textDecoration: 'none' }}>
+                <Link to='/view-cart' className={location.pathname === '/view-cart' ? 'mobile-footer-div active' : 'mobile-footer-div'} style={{ textDecoration: 'none' }}>
                     <div className='mobile-footer-div'>
                         <div className='mobile-cart-countImg-div'>
                             <img className="mobile-cart-countImg" src={MobileCartIcon} alt="cart" />
@@ -61,7 +62,7 @@ const Mobile_Footer = () => {
                     </div>
                 </Link>
 
-                <Link to='/my-invoices' style={{ textDecoration: 'none' }}>
+                <Link to='/my-invoices' className={location.pathname === '/my-invoices' ? 'mobile-footer-div active' : 'mobile-footer-div'} style={{ textDecoration: 'none' }}>
                     <div className='mobile-footer-div'>
                         <img src={MobileInvoiceIcon} alt="invoice" />
                         <span>Invoice</span>

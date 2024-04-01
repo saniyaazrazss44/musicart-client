@@ -16,6 +16,7 @@
     padding: 3rem 7rem;
     width: 100%;
     height: 100%;
+    margin-bottom: 0;
 }
 
 .home-header-bg {
@@ -592,6 +593,7 @@ select option {
 
     .home-div {
         padding: 1rem;
+        margin-bottom: 5rem;
     }
 
     .home-header-text {
