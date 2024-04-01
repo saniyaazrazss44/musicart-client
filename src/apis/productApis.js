@@ -1,5 +1,5 @@
 import axios from "axios";
-const backendUrl = `http://localhost:3002/api/product`
+const backendUrl = `https://musicart-server-6cjj.onrender.com/api/product`
 
 export const viewAllProductList = async ({ search, type, brand, color, price, sort }) => {
     try {

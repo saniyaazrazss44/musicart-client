@@ -1,5 +1,5 @@
 import axios from "axios";
-const backendUrl = `http://localhost:3002/api/user`
+const backendUrl = `https://musicart-server-6cjj.onrender.com/api/user`
 
 export const feedback = async ({ bugs, feedback, query }) => {
     try {

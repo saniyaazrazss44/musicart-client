@@ -1,5 +1,5 @@
 import axios from "axios";
-const backendUrl = `http://localhost:3002/api`
+const backendUrl = `https://musicart-server-6cjj.onrender.com/api`
 
 export const viewCheckout = async ({ userId }) => {
     try {
