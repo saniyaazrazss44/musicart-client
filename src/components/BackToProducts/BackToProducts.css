@@ -1,0 +1,13 @@
+.back-to-products {
+    border-radius: 14px;
+    background: #2E0052;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    color: #ffffff;
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    cursor: pointer;
+}

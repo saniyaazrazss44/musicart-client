@@ -1,0 +1,32 @@
+.view-cart-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 0.6rem 1.2rem;
+    background: #1D7000;
+    /* width: 17%; */
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+.view-cart-img {
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.view-cart-img img {
+    width: 100%;
+}
+
+.view-cart-text {
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.view-cart-count {
+    color: #ffffff;
+    font-size: 1rem;
+}

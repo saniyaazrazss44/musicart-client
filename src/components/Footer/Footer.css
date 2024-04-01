@@ -1,0 +1,13 @@
+.footerMain {
+    width: 100%;
+    background: #2E0052;
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerText h3 {
+    color: #ffffff;
+    font-size: 0.9rem;
+}

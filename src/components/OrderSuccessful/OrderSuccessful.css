@@ -1,0 +1,137 @@
+.order-page {
+    height: 100%;
+    width: 100%;
+}
+
+.order-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+.order-div-container {
+    padding: 3rem 7rem;
+    padding-bottom: 5rem;
+    width: 100%;
+    height: 100%;
+}
+
+.order-div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order-body-container {
+    padding: 3rem 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-body {
+    border-radius: 13px;
+    background: #ffffff;
+    box-shadow: 8px 8px 16px #a8a8a8,
+        -8px -8px 16px #ffffff;
+    border: 2px solid #E3E3E3;
+    width: 60%;
+    height: 100%;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.order-body-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.3rem;
+}
+
+.order-body-content button {
+    background: #2E0052;
+    padding: 1rem 2rem;
+    color: #ffffff;
+    border-style: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.order-body-content img {
+    width: 50%;
+}
+
+.div-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.87rem;
+}
+
+.order-details-text {
+    text-align: center;
+    width: 100%;
+    color: #969696;
+}
+
+.mobile-Header {
+    width: 100%;
+    background: #2E0052;
+    padding: 0.7rem 3rem;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile-Footer {
+    width: 100%;
+    background: #FFFFFF;
+    /* padding: 0.7rem 3rem; */
+    border: 1px solid #C8C8C8;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:865px) {
+    .website-header {
+        display: none;
+    }
+
+    .mobile-Header {
+        display: flex;
+    }
+
+    .order-div {
+        display: none;
+    }
+
+    .order-body {
+        width: 100%;
+    }
+
+    .order-div-container {
+        padding: 1rem;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .website-footer {
+        display: none;
+    }
+
+    .mobile-Footer {
+        display: flex;
+    }
+}

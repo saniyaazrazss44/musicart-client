@@ -1,0 +1,196 @@
+.myallinvoices-page {
+    height: 100%;
+    width: 100%;
+}
+
+.myallinvoices-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+.myallinvoices-div-container {
+    padding: 3rem 7rem 15rem 7rem;
+    width: 100%;
+    height: 100%;
+}
+
+.myallinvoices-div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.myallinvoices {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+.myallinvoices-first-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+}
+
+.myallinvoices-first-div h1 {
+    font-size: 1.3rem;
+}
+
+.myallinvoices-first-div img {
+    display: none;
+}
+
+.myallinvoices-second-div {
+    width: 100%;
+    padding: 1rem 0 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.myallinvoices-secondDiv-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 2px solid #E1E1E1;
+    padding-bottom: 1rem;
+}
+
+.myallinvoices-invoice-details {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.5rem;
+}
+
+.myallinvoices-invoice-icon img {
+    width: 50px;
+    display: flex;
+}
+
+.myallinvoices-invoice-name {
+    color: #797979;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.myallinvoices-btn-viewInvoice button {
+    border-style: none;
+    background: #2E0052;
+    padding: 0.8rem 1.5rem;
+    border-radius: 12px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.back-to-home {
+    border-radius: 14px;
+    background: #2E0052;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    color: #ffffff;
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    cursor: pointer;
+}
+
+.home-allinvoices-link {
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+}
+
+.home-allinvoices-link a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.mobile-Header {
+    width: 100%;
+    background: #2E0052;
+    padding: 0.7rem 3rem;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile-Footer {
+    width: 100%;
+    background: #FFFFFF;
+    /* padding: 0.7rem 3rem; */
+    border: 1px solid #C8C8C8;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.backToProducts {
+    display: flex;
+}
+
+.backToMobileProducts {
+    display: none;
+}
+
+
+@media screen and (max-width:865px) {
+    .myallinvoices-div {
+        display: none;
+    }
+
+    .myallinvoices-div-container {
+        padding: 1rem 1rem 15rem 1rem;
+    }
+
+    .website-header {
+        display: none;
+    }
+
+    .mobile-Header {
+        display: flex;
+    }
+
+    .website-footer {
+        display: none;
+    }
+
+    .mobile-Footer {
+        display: flex;
+    }
+
+    .backToProducts {
+        display: none;
+    }
+
+    .backToMobileProducts {
+        display: flex;
+    }
+
+    .myallinvoices-first-div img {
+        display: flex;
+    }
+
+    .myallinvoices-invoice-details {
+        gap: 1.2rem;
+    }
+
+    .myallinvoices-btn-viewInvoice button {
+        border-radius: 22px;
+    }
+}

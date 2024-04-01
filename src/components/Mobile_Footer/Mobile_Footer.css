@@ -1,0 +1,51 @@
+.mobile-div {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.2rem;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    padding: 0.7rem 1rem;
+}
+
+.mobile-footer-div {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.2rem;
+    cursor: pointer;
+}
+
+.mobile-footer-div span {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #000000;
+    padding: 0.4rem 0;
+}
+
+.mobile-cart-count {
+    width: 1.7rem;
+    height: 1.7rem;
+    padding: 0.3rem;
+    border-style: none;
+    border-radius: 100%;
+    background: #2DAD00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    position: absolute;
+    top: 0;
+    right: -4;
+    transform: translate(50%, -50%);
+}
+
+.mobile-cart-countImg-div {
+    position: relative;
+    display: flex;
+}

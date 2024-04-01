@@ -1,0 +1,40 @@
+.headerMain {
+    width: 100%;
+    background: #2E0052;
+    padding: 0.7rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerText {
+    display: flex;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.headerText h3 {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.headerText1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.9rem;
+}
+
+.headerText1 img {
+    width: 1.47rem;
+}
+
+.headerText1 h3 {
+    color: #ffffff;
+    font-size: 0.87rem;
+}
+
+.headerText2 h3 {
+    color: #ffffff;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,14 @@
+.back-mobile-to-cart {
+    border-radius: 100%;
+    background: #ffffff;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+}
