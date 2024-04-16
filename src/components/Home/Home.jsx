@@ -34,8 +34,8 @@ const Home = () => {
     const [detailsVisible, setDetailsVisible] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
     const [isGridView, setIsGridView] = useState(true);
-    const [searchInput, setSearchInput] = useState('');
     const [selectedFilter, setSelectedFilter] = useState({
+        search: '',
         type: '',
         brand: '',
         color: '',
@@ -61,7 +61,7 @@ const Home = () => {
         async function fetchProducts() {
 
             try {
-                const response = await viewAllProductList(selectedFilter, { search: searchInput });
+                const response = await viewAllProductList(selectedFilter);
                 setProducts(response)
             } catch (error) {
                 console.error('Error fetching products:', error);
@@ -69,7 +69,7 @@ const Home = () => {
         }
 
         fetchProducts();
-    }, [selectedFilter, searchInput])
+    }, [selectedFilter])
 
     useEffect(() => {
         document.addEventListener('click', handleDocumentClick);
@@ -152,11 +152,6 @@ const Home = () => {
             ...prevState,
             [category]: value
         }));
-    };
-
-    const handleSearchInputChange = (event) => {
-        const { value } = event.target;
-        setSearchInput(value);
     };
 
     const addToCartByIcon = async (productId) => {
@@ -255,8 +250,8 @@ const Home = () => {
                 <div className='mobile-Header'>
                     <div className='inpMobileSearch'>
                         <img src={SearchIcon} alt="search" />
-                        <input type="text" value={searchInput}
-                            onChange={handleSearchInputChange} placeholder='Search Musicart' />
+                        <input type="text" value={selectedFilter.search}
+                            onChange={(e) => handleFilterChange('search', e.target.value)} placeholder='Search Musicart' />
                     </div>
                 </div>
 
@@ -312,8 +307,8 @@ const Home = () => {
 
                     <div className='inpSearch'>
                         <img src={SearchIcon} alt="search" />
-                        <input type="text" value={searchInput}
-                            onChange={handleSearchInputChange} placeholder='Search by Product Name' />
+                        <input type="text" value={selectedFilter.search}
+                            onChange={(e) => handleFilterChange('search', e.target.value)} placeholder='Search by Product Name' />
                     </div>
 
                     <div className='filterDiv roboto-regular'>
